@@ -1,0 +1,39 @@
+ticket_id,human_label,existing_tag,customer_message,ai_category,ai_confidence,classification_mode,cache_hit,correct
+TK-244258,Audio Quality & Hardware Defect,Delivery & Shipping,"Honestly reggretting this purchase.  This is regarding my Nexa 2 watch. box was crushed and the my Nexa 2 watch is cracked. I already refsued nothing as I didn't notice till later. I want a replacement or refund, notihng else.",Audio Quality & Hardware Defect,0.97,llm,False,True
+TK-254574,Billing & Payments,Billing & Payments,your ad said 20% off and the cart says full prie,Billing & Payments,0.97,llm,False,True
+TK-246042,Delivery & Shipping,Delivery & Shipping,"Hello Vireo, This is regarding my Strata 3 headphones. Tracking has said out for delivery for a week now. I checked with neighbours. Very poor quality. Can someone fix this? Thanks & regards Kabir",Delivery & Shipping,0.95,llm,False,True
+TK-242460,Audio Quality & Hardware Defect,Audio Quality,SOUNDS LIKE A BADLY TUNED RAIDO NOW - KINDLY LOOK INTO IT,Audio Quality & Hardware Defect,0.95,llm,False,True
+TK-248004,Delivery & Shipping,Billing & Payments,"hi
+my order has not been delivered yet
+pls reply",Delivery & Shipping,0.97,llm,False,True
+TK-251674,Product Enquiry & General,Other,"my son ordered this without asking, please reverse
+VR881514",Returns & Refunds,0.95,llm,False,False
+TK-250025,Warranty & Repair,Warranty & Repair,"Hello, Bought my Orbit around 31 Dec from vireo.in. Claim number RMA82615, anyone alive there?. I emailed twice. Nothing changed. I want my money back. Please revert,",Warranty & Repair,0.97,llm,False,True
+TK-247731,Delivery & Shipping,Billing & Payments,"Patetic experience honestly. Order VR881259 (Strata 3). payment successful but order not delivered. I already checked with neighbours. I want a replcaement or refund, nothing else.",Delivery & Shipping,0.97,llm,False,True
+TK-245895,Connectivity & Pairing,Connectivity,"Hi, Order VR899707 (pulse 1). Bluetooth pairng fails everry time. I restarted the phone. Nothhing changed. Pleasse call me on my reegistered number. Thanks in advance",Connectivity & Pairing,0.98,llm,False,True
+TK-244987,"App, Firmware & Software",Charging & Battery,"I bought the mini spaeker on 15-08-2025.  Update failed and now it won't turn on. I kept it in the case. Not what I expected from Vireo. Please resolve asap. Thanks & regards,","App, Firmware & Software",0.97,llm,False,True
+TK-247970,Delivery & Shipping,Delivery & Shipping,i have been sitting at home for 3 dys waiting for your courier,Delivery & Shipping,0.95,llm,False,True
+TK-251695,Returns & Refunds,Returns & Refunds,"helo
+refund not received yet",Returns & Refunds,0.95,llm,False,True
+TK-246068,Product Enquiry & General,Product Enquiry,[IVR transcript] sir ji before i buy - will this talk to a 2019 samsung bahut pareshan hu kindly do teh needful,Product Enquiry & General,0.98,llm,False,True
+TK-251562,Warranty & Repair,Other,"Product: my Pulse 2
+Purchased: 09 Feb
+Issue: I sent the unit in 16 dys ago and have haerd nothing
+Tried: called service centre
+Expected: replacement",Warranty & Repair,0.97,llm,False,True
+TK-244813,Account & Login,Account & Login,"Dear Sir/Madam,
+
+I am writing with reference to my order of pulse 2 buds (VR890562) placed on 02-08-2025. Locked out of my own account since 3 weeks back. I have tried 5 times. I request you to kindly arrange a replacement.
+
+Yours faithfully,
+Nikhil Mishra",Account & Login,0.97,llm,False,True
+TK-242188,Billing & Payments,Billing & Payments,your ad said 20% off and the cart says full price,Billing & Payments,0.97,llm,False,True
+TK-248534,Connectivity & Pairing,Other,pairing is not working,Connectivity & Pairing,0.98,llm,False,True
+TK-246319,Delivery & Shipping,Billing & Payments,"hi vireo support, i bought orbit mini on 10 oct. money gone from account, item not with me, 5 days. i called the courier. nothing changed. pleaase resolve asap.",Delivery & Shipping,0.97,llm,False,True
+TK-249857,Delivery & Shipping,Delivery & Shipping,"Product: Strata 3
+Order: VR890918
+Purchased: 26 Aug
+Issue: tracking has said out for delivery for a week now
+Tried: checked the tracking page daily
+Expected: refund",Delivery & Shipping,0.97,llm,False,True
+TK-243625,Delivery & Shipping,App & Firmware,"honestly regretting this purchase. order vr895262 (the nexa 2). atfer the update prompt it went dark and never came back. i already kept phone nearby. i want a replacement or refund, nothing else.","App, Firmware & Software",0.97,llm,False,False

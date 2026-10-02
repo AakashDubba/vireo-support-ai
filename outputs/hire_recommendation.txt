@@ -1,0 +1,31 @@
+============================================================
+HEADCOUNT RECOMMENDATION  (next 2 hires)
+============================================================
+
+Evidence — Tier 1 teams by tickets/agent (primary window):
+  Team                          HC  Tkt/Agt  Median_h(all)  Median_h(HD)  TR_rate   CSAT
+  --------------------------------------------------------------------------------------
+  Billing                        4      606           0.5h          0.4h [!]      32%   3.05
+  Logistics                      5      381          42.8h         24.4h       8%   3.13
+  Returns Desk                   3      350          43.1h         48.2h       6%   3.35
+
+BILLING HANDLE-TIME ANOMALY [!]:
+  Helpdesk tickets: median = 0.43h  (n=1491)
+  All tickets (valid): median = 0.53h
+  Excluded: 579 negative (legacy_fd UTC/IST artefact)
+  Interpretation: helpdesk Billing tickets close fast (payment confirmations / macros).
+  This does NOT invalidate the volume or transfer-rate evidence.
+  Mean handle time = 19.4h (long-tail escalations present).
+
+RECOMMENDATION:
+  Place BOTH new hires on Billing.
+  Rationale:
+    - Volume gap: 606 vs 381 tickets/agent (1.6x)
+    - Transfer rate: 32% vs 8% — Billing tickets are more complex
+    - CSAT: 3.05 vs 3.13 — stress signal on Billing
+
+DATA LIMITATIONS:
+  - Roster is a static snapshot; agents who changed teams mid-period are not tracked.
+  - Transfer data covers current helpdesk only (~66% of primary-window tickets).
+  - Negative handle times (579 Billing, 236 Logistics, etc.) excluded — UTC/IST artefact.
+  - CSAT response rate ~45%; non-response bias unknown.

@@ -1,0 +1,2 @@
+# Optional: Streamlit UI (not required for CLI)
+streamlit>=1.30

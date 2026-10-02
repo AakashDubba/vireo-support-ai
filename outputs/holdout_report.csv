@@ -1,0 +1,20 @@
+metric,value,notes
+label,new_holdout,Validation set identifier
+n,100,Tickets matched to human labels
+overall_accuracy,0.75,Fraction correctly classified
+llm_accuracy,0.75,LLM-mode predictions only
+offline_accuracy,N/A,Offline predictions only
+llm_n,100,Tickets via LLM
+offline_n,0,Tickets via offline mode
+correct,75,Correctly classified
+errors,25,Misclassified
+"failure_Product Enquiry & Gene->App, Firmware & Softwa",6,Misclassification count
+failure_Product Enquiry & Gene->Audio Quality & Hardwa,4,Misclassification count
+failure_Delivery & Shipping->Returns & Refunds,3,Misclassification count
+failure_Returns & Refunds->Delivery & Shipping,2,Misclassification count
+failure_Billing & Payments->Delivery & Shipping,2,Misclassification count
+failure_Charging & Battery->Returns & Refunds,1,Misclassification count
+failure_Charging & Battery->Billing & Payments,1,Misclassification count
+failure_Charging & Battery->Audio Quality & Hardwa,1,Misclassification count
+"failure_App, Firmware & Softwa->Audio Quality & Hardwa",1,Misclassification count
+failure_Delivery & Shipping->Audio Quality & Hardwa,1,Misclassification count

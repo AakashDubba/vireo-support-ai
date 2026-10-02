@@ -1,0 +1,64 @@
+================================================================================
+VIREO AUDIO — BANAO SUBMISSION FORM ANSWERS
+================================================================================
+
+1. What did you build, and what business outcome does it move? State the number and the money.
+--------------------------------------------------------------------------------
+Built an automated ticket intelligence pipeline classifying 11,780 support tickets into a 10-category taxonomy using Groq LLM (openai/gpt-oss-20b) with sentence-transformer fallback. It resolves the 13.8% "Other" tag deficit, proves Delivery & Shipping is the top volume driver (30.5% / ~3,550 tickets), and justifies placing both new hires on Billing based on a 1.59x workload gap (606 vs 381 tickets/agent) and 4x transfer complexity (32% vs 8%). Total human support operating cost is Rs.33,75,890 INR, while annual AI operating cost is negligible at $5.19 USD (~Rs.436 INR), under 0.014% of support spend.
+
+
+2. What does one run cost, and what would a month cost at 650 tickets/week? Show arithmetic.
+--------------------------------------------------------------------------------
+One 100-ticket run cost $0.01536 USD (~Rs.1.29 INR) at $0.0001536 USD/ticket (152,133 input + 13,176 output tokens @ $0.075/$0.30 per 1M). Monthly volume at 650 tickets/week is (650 x 52) / 12 = 2,816.67 tickets/month. Monthly AI cost is 2,816.67 x $0.00015363 = $0.4327 USD/month (~Rs.36.35 INR/month). Annual cost is 33,800 x $0.00015363 = $5.19 USD/year (~Rs.436.19 INR/year).
+
+
+3. How do you know it works?
+--------------------------------------------------------------------------------
+Validated across three independent stages: (1) 20-ticket tuning set achieved 90.0% (18/20); (2) 100-ticket baseline validation achieved 73.0% (73/100); (3) 100-ticket untouched holdout achieved 75.0% (75/100) with 100 fresh Groq calls and 0 failures. Recall on core operational categories reached 100% (Connectivity, Audio Quality, Account) and 87% (Delivery). Full test suite passed 14 / 14 tests (100%) covering joins, parsing, and caching.
+
+
+4. Did you change, narrow, or push back on the client's ask?
+--------------------------------------------------------------------------------
+Yes: (1) Refined category names to Connectivity & Pairing and Audio Quality & Hardware Defect to reflect actual ticket symptoms; (2) Pushed back against evaluating Billing purely on median handle time (0.43h) by demonstrating its 32% transfer rate, 72h P90, and 3.05 CSAT prove severe complexity; (3) Excluded 139 pre-2025 legacy tickets and 2,575 negative handle-time records from business metrics to prevent migration distortion.
+
+
+5. What is wrong with what you are handing us?
+--------------------------------------------------------------------------------
+(1) 11 of 25 holdout errors stem from human heuristic labels treating Product Enquiry & General as a catch-all when customers reported specific software/hardware bugs; (2) Free-text customer names are not masked (only emails and phone numbers are masked); (3) Legacy Freshdesk lacks transfer tracking (~34% missing transfer data); (4) Sequential processing requires Groq 8,000 TPM rate-limit pacing.
+
+
+6. What did you deliberately leave out, and why?
+--------------------------------------------------------------------------------
+Deliberately omitted a React frontend, FastAPI server, Docker containers, and custom ML training pipelines. The business requirement called for an auditable, reproducible analytics pipeline generating standard CSV outputs and executive memos (docs/memo.md). Web servers and enterprise wrappers would add maintenance drag without improving analytical accuracy.
+
+
+7. Anything you built or found that nobody asked for?
+--------------------------------------------------------------------------------
+(1) Automated rate-limit backoff handler and checkpoint-resume system for uninterrupted batch LLM execution; (2) Detailed forensic discovery explaining the 0.43h Billing handle-time anomaly; (3) Dual cost-accounting separating technical inference spend from support operational spend; (4) Hierarchical 3-level reasoning prompt structure.
+
+
+8. What did you use AI for?
+--------------------------------------------------------------------------------
+Used Groq LLM (openai/gpt-oss-20b) for zero-shot ticket classification; used all-MiniLM-L6-v2 for offline semantic fallback; used Antigravity IDE assistant for prompt engineering, script creation, statistical audits, and test generation. Discarded arbitrary keyword extraction and high-token multi-shot prompts.
+
+
+9. Your Public Google Drive Link
+--------------------------------------------------------------------------------
+[INSERT 3-MINUTE VIDEO LINK]
+
+
+10. Someone picks this up on Monday — the three things they need to know.
+--------------------------------------------------------------------------------
+1. Run `python run.py --data ./data` to execute the full pipeline using disk cache in ~25s.
+2. All final headcount, category, and cost tables are in `outputs/`, synthesized in `docs/memo.md`.
+3. Do not split hires between Billing and Logistics: Billing's low median handle time is an artifact; its 606 tickets/agent load and 32% transfer rate dictate both hires belong in Billing.
+
+
+11. Honest hours spent.
+--------------------------------------------------------------------------------
+[INSERT ACTUAL HOURS]
+
+
+12. Github Repo Link
+--------------------------------------------------------------------------------
+[INSERT PUBLIC GITHUB URL]

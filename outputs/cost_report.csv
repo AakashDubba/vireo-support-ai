@@ -1,0 +1,27 @@
+metric,value,unit,notes
+── SECTION A: AI OPERATING COST ──────────────────,,,
+a_groq_model,openai/gpt-oss-20b,model,Groq model used for classification
+a_api_calls,0,calls,Groq API calls for historical dataset
+a_cache_hits,11780,hits,Reused from disk cache — zero API cost
+a_cache_misses,0,misses,Required API call or offline classification
+a_input_tokens,0,tokens,Total Groq input tokens (0 = offline mode)
+a_output_tokens,0,tokens,Total Groq output tokens (0 = offline mode)
+a_historical_cost_usd,0.0,USD,Actual Groq cost — 0.0 means offline mode was used (not that cost is zero)
+a_historical_cost_inr,0.0,INR,At 1 USD = Rs.84.0
+a_cost_per_ticket_usd,2.475e-05,USD/ticket,"ESTIMATE: 250 input + 20 output tokens @ $0.075/1M in, $0.3/1M out (Groq) — no actual API calls yet"
+── FORWARD ESTIMATES (not historical spend) ──────,,,
+a_est_weekly_cost_usd,0.016087,USD/week-ESTIMATE,At 650 tickets/week — token estimate
+a_est_annual_cost_usd,0.8365,USD/year-ESTIMATE,52 weeks x 650 tickets/week
+a_est_annual_cost_inr,70.27,INR/year-ESTIMATE,Annual AI operating cost estimate
+a_price_in_per_1m_usd,0.075,USD/1M-tokens,Groq input token pricing
+a_price_out_per_1m_usd,0.3,USD/1M-tokens,Groq output token pricing
+a_usd_to_inr_rate,84.0,rate,Configurable via USD_TO_INR in .env
+── SECTION B: SUPPORT / BUSINESS COSTS ──────────,,,
+b_policy_cost_per_contact_inr,290,INR/contact,support-policy.pdf §4 — blended all channels; NOT AI cost
+b_primary_window_contacts,11641,tickets,Jan 2025-Jun 2026
+b_total_support_cost_inr,3375890,INR,"11,641 contacts x Rs.290"
+b_agent_cost_per_hour_inr,165,INR/hour,Policy §4 — staffing decisions
+b_transfer_cost_per_unit_inr,305,INR/transfer,Policy §4
+b_helpdesk_tickets_with_transfer_data,7728,tickets,Helpdesk tickets with non-null transfers — legacy_fd NOT extrapolated
+b_transfer_units_recorded,1299,transfers,Sum of transfers field (helpdesk only)
+b_transfer_cost_inr,396195.0,INR,Transfer cost for helpdesk-only tickets; legacy_fd excluded (data missing)

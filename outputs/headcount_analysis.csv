@@ -1,0 +1,8 @@
+assigned_team,total_tickets,headcount,tier,tickets_per_agent,valid_ht_n,median_ht_h,mean_ht_h,p90_ht_h,helpdesk_ht_n,helpdesk_median_h,negative_ht_excluded,unresolved_excluded,transfer_data_n,mean_transfers,transfer_rate,avg_csat,csat_n,high_priority_pct,billing_ht_anomaly_flag
+Billing,2425,4,1,606.2,1731,0.53,24.37,72.57,1491,0.43,579,115,1558,0.406,0.32,3.05,1090,0.626,True
+Logistics,1905,5,1,381.0,1584,42.8,44.63,120.22,1178,24.43,236,85,1233,0.091,0.079,3.13,880,0.161,False
+Returns Desk,1049,3,1,349.7,897,43.07,41.32,72.4,640,48.24,90,62,680,0.068,0.057,3.35,494,0.097,False
+Email Frontline,1807,7,1,258.1,1212,0.37,11.05,0.82,1170,0.35,504,91,1229,0.113,0.103,3.61,808,0.077,True
+Voice Frontline,900,4,1,225.0,582,0.37,11.93,0.88,566,0.35,268,50,605,0.136,0.117,3.65,417,0.107,True
+Chat Frontline,3030,15,1,202.0,2025,0.38,13.55,24.33,1955,0.37,853,152,2063,0.119,0.107,3.63,1371,0.08,True
+Escalations & Warranty,525,6,2,87.5,503,116.42,129.71,289.65,344,99.87,0,22,360,0.119,0.103,3.28,228,0.124,False
